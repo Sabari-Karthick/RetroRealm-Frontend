@@ -1,0 +1,13 @@
+:host ::ng-deep .footer-toolbar {
+  background-color: #0c161f;
+  border: #0c161f;
+  border-radius: 1px;
+  .p-button {
+    background: inherit;
+    border: inherit;
+    color: grey;
+  }
+  .p-button:hover {
+    color: white;
+  }
+}
