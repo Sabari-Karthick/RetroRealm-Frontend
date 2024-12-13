@@ -1,6 +1,21 @@
-.header{
-    background-color: red;
-    width: 100%;
-    height: 25px;
-    text-align: center;
-}
+// .header{
+//     background-color: red;
+//     width: 100%;
+//     height: 25px;
+//     text-align: center;
+// }
+
+:host ::ng-deep .header-toolbar {
+    background-color: #0c161f;
+    border: #0c161f;
+    border-radius: 1px;
+    .p-button {
+      background: inherit;
+      border: inherit;
+      color: grey;
+    }
+    .p-button:hover {
+      color: white;
+    }
+  }
+  

@@ -1,3 +1,37 @@
 <div class="header">
- <span>Retro Realm Header</span>
+  <p-toolbar styleClass="header-toolbar">
+    <div class="p-toolbar-group-start">
+      <p-button
+        class="mr-2"
+        label="Retro"
+        icon="pi pi-trophy"
+        (onClick)="call()"
+      />
+    </div>
+    <div class="p-toolbar-group-middle">
+      <div class="card flex justify-content-center" id="retroMenu">
+        <p-menu #menu [model]="items" [popup]="true" />
+        <p-button
+          (mouseenter)="menu.toggle($event)"
+          (mouseleave)="menu.hide()"
+          label="Store"
+          (onClick)="test()"
+        />
+        <p-button class="mr-2" label="Games" (onClick)="call()" />
+        <p-button class="mr-2" label="Help" (onClick)="call()" />
+      </div>
+    </div>
+    <div class="p-toolbar-group-end">
+      <p-button icon="pi pi-bell" class="mr-2" (onClick)="notify()" />
+      <!-- <p-avatar
+        label="U"
+        styleClass="mr-2"
+        [style]="{ 'background-color': '#dee9fc', color: '#1a2551' }"
+      /> -->
+      <div class="card flex justify-content-center" id="userMenu">
+        <p-menu #menu [model]="items" [popup]="true" />
+        <p-button (onClick)="menu.toggle($event)" label="User" />
+      </div>
+    </div>
+  </p-toolbar>
 </div>
