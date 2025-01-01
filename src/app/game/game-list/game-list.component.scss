@@ -1,0 +1,23 @@
+.game-list {
+  background-color: #2a475e;
+  display: flow-root;
+  min-height: 100%;
+}
+
+.games {
+  display: grid;
+  column-gap: 2px;
+  row-gap: 14px;
+  grid-template-columns: repeat(4, minmax(400px, 400px));
+  margin-top: 50px;
+  padding-left: 50px;
+  justify-content: space-around;
+
+  @media (min-width: 500px) and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 499px) {
+    grid-template-columns: 1fr;
+  }
+}

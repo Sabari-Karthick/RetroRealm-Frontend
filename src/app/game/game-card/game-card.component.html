@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-body">
+      <h3 class="card-title">{{ game.gameName }}</h3>
+      <div></div>
+      <p class="card-price">Price: ${{ game.gamePrice }}</p>
+      <p class="card-details">Studio: {{ game.gameOwner.companyName }}</p>
+      <p class="card-genre">Genre: {{ game.gameGenere }}</p>
+      <button (click)="onViewDetails()">View Details</button>
+    </div>
+  </div>
+  
