@@ -13,10 +13,9 @@
         <p-menu #menu [model]="items" [popup]="true" />
         <p-button
           (mouseenter)="menu.toggle($event)"
-          (mouseleave)="menu.hide()"
           label="Store"
           (onClick)="test()"
-        />
+        /><!-- (mouseleave)="menu.hide()" -->
         <p-button class="mr-2" label="Games" (onClick)="call()" />
         <p-button class="mr-2" label="Help" (onClick)="call()" />
       </div>
