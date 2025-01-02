@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Game } from '../Game';
+import { TooltipModule } from 'primeng/tooltip';
 
 @Component({
   selector: 'game-card',
   standalone: true,
-  imports: [],
+  imports: [TooltipModule],
   templateUrl: './game-card.component.html',
   styleUrl: './game-card.component.scss'
 })

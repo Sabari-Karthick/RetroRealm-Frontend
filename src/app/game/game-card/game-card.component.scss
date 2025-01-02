@@ -1,34 +1,37 @@
 .card {
-    border: 1px solid #4d779a;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px grey;
-    width: 200px;
-    text-align: center;
-    margin: 10px;
-    background-color: #4d779a;
+  border: 1px solid #4d779a;
+  border-radius: 6px;
+  overflow: hidden;
+  // box-shadow: 0 2px 6px black;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center; // center horizontally
+  align-items: center; // center vertically
+  // text-align: center;
+  margin: 10px;
+  background-color: #4d779a;
+}
+::ng-deep .gameCardToolTip {
+  height: 160px;
+  .p-tooltip-text {
+    background-color: rgb(158, 153, 153);
   }
-  
-  .card-body {
-    padding: 10px;
+  .p-tooltip-arrow {
+    border-right-color: rgb(158, 153, 153);
   }
-  
-  .card-title {
-    font-size: 1.2rem;
-    margin: 10px 0;
-  }
-  
-  .card-genre {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  .card-details {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  .card-price {
-    font-weight: bold;
-    color: #333;
-  }
-  
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 2px 16px black;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}

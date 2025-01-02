@@ -8,6 +8,8 @@ export interface Game {
     gameVersion: number;
     gameReleasedDate:Date;
     gameDiscount:number;
-    gameGenere:string[];
+    gameGenre:string[];
     discountedGamePrice:number;
+    gameDescription:string;
+    gameRating:number;
   }
