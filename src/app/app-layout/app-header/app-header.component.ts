@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, Injectable, OnInit } from '@angular/core';
 import { AvatarModule } from 'primeng/avatar';
 import { Button } from 'primeng/button';
 import { ToolbarModule } from 'primeng/toolbar';
 import { MenuModule } from 'primeng/menu';
 import { MenuItem } from 'primeng/api';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -14,6 +15,8 @@ import { MenuItem } from 'primeng/api';
 export class AppHeaderComponent implements OnInit {
   items!: MenuItem[];
   retroMenuItems!: MenuItem[];
+
+  constructor(@Inject(Router) private router: Router) {}
 
   ngOnInit() {
     this.items = [
@@ -32,7 +35,7 @@ export class AppHeaderComponent implements OnInit {
       },
     ];
 
-    this.retroMenuItems =[
+    this.retroMenuItems = [
       {
         label: 'Options',
         items: [
