@@ -13,13 +13,11 @@ import { GameService } from '../game.service';
   styleUrl: './game-list.component.scss',
 })
 export class GameListComponent implements OnInit {
+
   games!: Game[];
+  private gameService = inject(GameService);
 
-  gameService = inject(GameService);
 
-  constructor() {
-    console.log('Game List:', this.games); // Log the mock data immediately
-  }
   ngOnInit(): void {
     // this.gameService.getAllGames().subscribe({
     //   next: (games: Game[]) => {
@@ -34,6 +32,6 @@ export class GameListComponent implements OnInit {
   }
 
   onGameDetails(gameId: number) {
-    alert('View details for game:' + gameId);
+    console.log('View details for game:' + gameId);
   }
 }

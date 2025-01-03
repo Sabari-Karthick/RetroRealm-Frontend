@@ -2,7 +2,7 @@
   <section class="games">
     <game-card  *ngFor="let game of games"
       [game]="game" 
-      (viewDetails)="onGameDetails($event)"
+      (gameDetails)="onGameDetails($event)"
     >  <!-- Here game is property Binding and the view details is an event binding-->
     </game-card>
   </section>

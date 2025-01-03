@@ -1,10 +1,10 @@
-<div class="card" [pTooltip]="gameContent" tooltipStyleClass="gameCardToolTip" tooltipPosition="left">
+<div class="card" [pTooltip]="gameContent" tooltipStyleClass="gameCardToolTip" tooltipPosition="left" (click)="onViewGameDetails()">
   <div class="card-body">
     <h3 class="card-title">{{ game.gameName }}</h3>
     <!-- <p class="card-price">Price: ${{ game.gamePrice }}</p>
       <p class="card-details">Studio: {{ game.gameOwner.companyName }}</p>
       <p class="card-genre">Genre: {{ game.gameGenere }}</p>
-      <button (click)="onViewDetails()">View Details</button> -->
+      <button >View Details</button> -->
   </div>
 </div>
 <ng-template #gameContent>
