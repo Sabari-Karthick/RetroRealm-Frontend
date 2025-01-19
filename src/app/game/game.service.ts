@@ -14,7 +14,7 @@ export class GameService {
 
 
  public getAllGames():Observable<Game[]>{
-  return this.http.post<Game[]>('http://localhost:8888/api/v1/game/all',{}).pipe(
+  return this.http.post<Game[]>('/api/game/all',{}).pipe(
     catchError(this.handleError)
   );
  }
