@@ -3,11 +3,11 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.sk.retro</groupId>
-        <artifactId>RetroRealm</artifactId>
-        <version>1.0.0</version>
-    </parent>
+	<parent>
+		<groupId>com.batman</groupId>
+		<artifactId>Boot_58_Spring_Angular_Integration</artifactId>
+		<version>1.0</version>
+	</parent>
     <artifactId>retrorealm-frontend</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -66,7 +66,7 @@
                                 <argument>build</argument>
                                 <argument>--prod</argument>
                                 <argument>--base-href</argument>
-                                <argument>"/ngdemo/"</argument>
+                                <argument>"/retrorealm-frontend/"</argument>
                             </arguments>
                         </configuration>
                         <phase>generate-resources</phase>
