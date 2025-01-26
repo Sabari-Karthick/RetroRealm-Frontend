@@ -1,0 +1,11 @@
+.gameView {
+    background-color: #2a475e;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    // align-items: center; /* Center vertically */
+    min-height: 100%; /* Make the container take the full height of the viewport */
+}
+
+.gameView__container{
+    display: flex;
+}

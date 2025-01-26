@@ -18,6 +18,13 @@ export class GameService {
     catchError(this.handleError)
   );
  }
+
+  public getGame(id:string):Observable<Game>{
+    return this.http.post<Game>('/api/game/',{id}).pipe(
+      catchError(this.handleError)
+    );
+  }
+
  private handleError(error: HttpErrorResponse) {
   if (error.error instanceof ErrorEvent) {
     // A client-side or network error occurred

@@ -1,6 +1,7 @@
 .game-list {
   background-color: #2a475e;
-  display: flow-root;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
 }
 
