@@ -1,0 +1,34 @@
+.search {
+    &_wrapper {
+        display: flex;
+        height: 36px;
+        padding: 1px 8px;
+        margin-top: 10px;
+        margin-right: 10px;
+        float: right;
+        align-items: center;
+        gap: 4px;
+        width: fit-content;
+        border-radius: 8px;
+        border: 1px solid #95979a; 
+    }
+    &_input{
+        background: inherit;
+        border: none;
+         
+        &::placeholder{
+            color: #fff;
+        }
+        &:focus{
+            outline: none;
+            &::placeholder{
+                color: transparent;
+            }
+        }
+
+    }
+
+}
+::ng-deep #searchIcon{
+    color: #fff;
+}

@@ -4,11 +4,12 @@ import { mockGames } from '../game.mock';
 import { GameCardComponent } from '../game-card/game-card.component';
 import { CommonModule } from '@angular/common';
 import { GameService } from '../game.service';
+import { SearchComponent } from "../../widgets/search/search.component";
 
 @Component({
   selector: 'game-list',
   standalone: true,
-  imports: [GameCardComponent, CommonModule],
+  imports: [GameCardComponent, CommonModule, SearchComponent],
   templateUrl: './game-list.component.html',
   styleUrl: './game-list.component.scss',
 })
