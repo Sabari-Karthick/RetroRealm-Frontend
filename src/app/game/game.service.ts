@@ -8,7 +8,7 @@ import { Game } from './Game';
 })
 export class GameService {
 
-  public http = inject(HttpClient);
+  private http = inject(HttpClient);
 
   constructor(/*private http:HttpClient*/) { }
 

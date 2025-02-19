@@ -1,4 +1,5 @@
 <div class="search_wrapper">
-    <input type="text" class="search_input" #search  autocomplete="off" placeholder="Search" id="searchBox" />
-    <i class="pi pi-search" id= "searchIcon" style="font-size: 1.5rem"></i>
+    
+    <p-autoComplete [suggestions]="gameSuggestions" [(ngModel)] = "selectedGame" optionLabel="gameName" [showClear]="true" id="searchBox" (completeMethod)="searchGame($event)" placeholder="Search"></p-autoComplete>
+    <p-inputIcon style="color: #fff;" styleClass="pi pi-search" />
 </div>
