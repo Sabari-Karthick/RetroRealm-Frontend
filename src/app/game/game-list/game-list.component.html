@@ -2,6 +2,9 @@
   <div class="action">
         <search></search>
   </div>
+  <section style="padding-left: 50px;">
+    <p-inputNumber [useGrouping]="false" mode="decimal" [minFractionDigits]="2" inputNumberLimiter [maxLength]=8></p-inputNumber>
+  </section>
   <section class="games">
     <game-card  *ngFor="let game of games"
       [game]="game" 
