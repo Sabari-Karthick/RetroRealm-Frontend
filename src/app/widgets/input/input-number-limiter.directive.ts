@@ -9,7 +9,7 @@ export class InputNumberLimiterDirective {
 
   @Input() maxLength: number = 10;
 
-  constructor(private host: InputNumber) { }
+  constructor(private host: InputNumber) {  }
 
   @HostListener('keydown', ['$event'])
   handleKeyDown(event: KeyboardEvent) {
@@ -19,7 +19,7 @@ export class InputNumberLimiterDirective {
       currentValue = currentValue.substring(0, currentValue.indexOf('.'));
     }
 
-    if (currentValue.length >= this.maxLength && this.isNumberKey(event)) {
+    if (currentValue.length >= this.maxLength && this.isNumberKey(event) && this.isNumberKey(event)) {
       event.preventDefault();
     }
   }
@@ -45,3 +45,4 @@ export class InputNumberLimiterDirective {
   }
 
 }
+
