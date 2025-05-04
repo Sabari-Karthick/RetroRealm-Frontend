@@ -6,12 +6,11 @@ import { CommonModule } from '@angular/common';
 import { GameService } from '../game.service';
 import { SearchComponent } from "../../widgets/search/search.component";
 import { SharedModule } from '../../shared.module';
-import { InputNumberLimiterDirective } from '../../widgets/input/input-number-limiter.directive';
 
 @Component({
   selector: 'game-list',
   standalone: true,
-  imports: [GameCardComponent, CommonModule, SearchComponent,SharedModule,InputNumberLimiterDirective],
+  imports: [GameCardComponent, CommonModule, SearchComponent,SharedModule],
   templateUrl: './game-list.component.html',
   styleUrl: './game-list.component.scss',
 })
